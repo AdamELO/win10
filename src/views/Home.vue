@@ -1,7 +1,5 @@
 <template>
-  <div class="bg-win10">
-    <h1>hello</h1>
-  </div>
+  <div class="bg-win10"></div>
 </template>
 
 <script>
@@ -15,6 +13,7 @@ export default {
   background-image: url("../assets/windows.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 </style>

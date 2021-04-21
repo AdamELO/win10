@@ -1,31 +1,26 @@
 <template>
-  <div>
-    <router-view />
-    <v-bottom-navigation v-model="value">
-      <v-btn value="recent">
-        <span>Recent</span>
-
-        <v-icon>mdi-history</v-icon>
-      </v-btn>
-
-      <v-btn value="favorites">
-        <span>Favorites</span>
-
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn value="nearby">
-        <span>Nearby</span>
-
-        <v-icon>mdi-map-marker</v-icon>
-      </v-btn>
-    </v-bottom-navigation>
-  </div>
+  <v-app>
+    <v-main>
+      <router-view />
+    </v-main>
+    <WindowsBar />
+  </v-app>
 </template>
 
 <script>
+import WindowsBar from "./components/WindowsBar.vue";
+
 export default {
   name: "App",
-  data: () => ({ value: "recent" }),
+  components: {
+    WindowsBar,
+  },
 };
 </script>
+
+<style>
+html,
+body {
+  overflow-y: hidden !important;
+}
+</style>
