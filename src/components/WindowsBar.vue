@@ -101,7 +101,9 @@ export default {
         today.getMinutes() >= 10
           ? today.getMinutes()
           : "0" + today.getMinutes();
-      const time = today.getHours() + ":" + minutes;
+      const hours =
+        today.getHours() >= 10 ? today.getHours() : "0" + today.getHours();
+      const time = hours + ":" + minutes;
       const dateTime = date;
       this.currentTime = time;
       this.currentDate = dateTime;
