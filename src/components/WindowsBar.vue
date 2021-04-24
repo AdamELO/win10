@@ -1,14 +1,18 @@
 <template>
   <div class="winBar">
-    <v-icon class="icons win10" color="white" medium>
-      mdi-microsoft-windows
-    </v-icon>
+    <transition name="slide-up">
+      <div v-if="isOpenWin10" class="modalwin10"></div>
+    </transition>
+    <button class="icons win10" @click="toggleModalWin10">
+      <v-icon color="white" medium> mdi-microsoft-windows </v-icon>
+    </button>
     <v-icon class="magnifyReverse icons" color="white" medium>
       mdi-magnify
     </v-icon>
     <div class="icons d-flex justify-center align-center">
       <img src="@/assets/mail_icon.png" alt="mail-icon" />
     </div>
+    <!-- <BaseIcon name="@/assets/mail_icon.png"></BaseIcon> -->
     <div class="icons d-flex justify-center align-center">
       <img src="@/assets/explorer-6.png" alt="file-explorer-icon" />
     </div>
@@ -81,12 +85,16 @@ export default {
     return {
       currentTime: "",
       currentDate: "",
+      isOpenWin10: false,
     };
   },
   created() {
     setInterval(this.getNow, 1000);
   },
   methods: {
+    toggleModalWin10() {
+      this.isOpenWin10 = !this.isOpenWin10;
+    },
     getNow: function () {
       const today = new Date();
       const month =
@@ -117,6 +125,9 @@ export default {
   height: 50px;
   background-color: rgb(0, 66, 117);
   display: flex;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
 }
 .magnifyReverse {
   transform: rotate(90deg);
@@ -143,5 +154,15 @@ export default {
 .verticalBar {
   border-left: solid 1px gray;
   padding: 2.5px;
+}
+.modalwin10 {
+  position: absolute;
+  bottom: 100%;
+  width: 40%;
+  height: 80vh;
+  background-color: rgb(8, 97, 165);
+}
+.v-icon::before {
+  background-color: transparent;
 }
 </style>
