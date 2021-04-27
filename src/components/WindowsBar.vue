@@ -1,7 +1,9 @@
 <template>
   <div class="winBar">
     <transition name="slide-up">
-      <div v-if="isOpenWin10" class="modalwin10"></div>
+      <div v-if="isOpenWin10" class="modalwin10">
+        <WindowsMenu />
+      </div>
     </transition>
     <button class="icons win10" @click="toggleModalWin10">
       <v-icon color="white" medium> mdi-microsoft-windows </v-icon>
@@ -12,7 +14,7 @@
     <div class="icons d-flex justify-center align-center">
       <img src="@/assets/mail_icon.png" alt="mail-icon" />
     </div>
-    <!-- <BaseIcon name="@/assets/mail_icon.png"></BaseIcon> -->
+    <!-- <BaseIcon name="mail_icon"></BaseIcon> -->
     <div class="icons d-flex justify-center align-center">
       <img src="@/assets/explorer-6.png" alt="file-explorer-icon" />
     </div>
@@ -80,7 +82,11 @@
 </template>
 
 <script>
+import WindowsMenu from "@/components/WindowsMenu";
 export default {
+  components: {
+    WindowsMenu,
+  },
   data() {
     return {
       currentTime: "",

@@ -1,6 +1,6 @@
 <template>
   <div class="icons d-flex justify-center align-center">
-    <img src=../assets/mail_icon.png :alt="name" />
+    <img :alt="imgSource" :src="imgsource" />
   </div>
 </template>
 
@@ -15,6 +15,19 @@ export default {
     height: {
       type: [Number, String],
       default: 24,
+    },
+  },
+  data() {
+    return {
+      imgsrc: "../assets/" + this.name + ".png",
+    };
+  },
+  created() {
+    this.imgsrc = "../assets/" + this.name + ".png";
+  },
+  computed: {
+    imgSource() {
+      return "../assets/" + this.name + ".png";
     },
   },
 };
