@@ -38,4 +38,17 @@ body {
   transform: translateY(-10px);
   opacity: 0;
 }
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(20, 20, 20);
+}
 </style>
