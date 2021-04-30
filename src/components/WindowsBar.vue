@@ -6,7 +6,9 @@
       </div>
     </transition>
     <button class="icons win10" @click="toggleModalWin10">
-      <v-icon color="white" medium> mdi-microsoft-windows </v-icon>
+      <v-icon color="white" class="win10" medium>
+        mdi-microsoft-windows
+      </v-icon>
     </button>
     <v-icon class="magnifyReverse icons" color="white" medium>
       mdi-magnify
