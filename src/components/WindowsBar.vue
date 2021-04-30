@@ -13,72 +13,38 @@
     <v-icon class="magnifyReverse icons" color="white" medium>
       mdi-magnify
     </v-icon>
-    <div class="icons d-flex justify-center align-center">
-      <img src="@/assets/mail_icon.png" alt="mail-icon" />
-    </div>
-    <!-- <BaseIcon name="mail_icon"></BaseIcon> -->
-    <div class="icons d-flex justify-center align-center">
-      <img src="@/assets/explorer-6.png" alt="file-explorer-icon" />
-    </div>
-    <div class="icons d-flex justify-center align-center">
-      <img src="@/assets/chrome.png" alt="google-chrome-icon" />
-    </div>
-    <div class="icons d-flex justify-center align-center">
-      <img
-        src="@/assets/visual_studio_code.png"
-        alt="visual-studio-code-icon"
-      />
-    </div>
+    <BaseIcon name="mail_icon" />
+    <BaseIcon name="explorer-6" />
+    <BaseIcon name="chrome" />
+    <BaseIcon name="visual_studio_code" />
     <v-spacer></v-spacer>
-    <div class="mx-2 d-flex justify-center align-center">
-      <img src="@/assets/help.png" alt="help-icon" />
-    </div>
-    <div class="right-icons d-flex justify-center align-center">
-      <img
-        width="20px"
-        height="20px"
-        src="@/assets/collapse_arrow.png"
-        alt="collapse-arrow-icon"
-      />
-    </div>
-    <div class="right-icons d-flex justify-center align-center">
-      <img
-        width="20px"
-        height="20px"
-        src="@/assets/battery_level.png"
-        alt="battery-level-icon"
-      />
-    </div>
-    <div class="right-icons d-flex justify-center align-center">
-      <img
-        width="20px"
-        height="20px"
-        src="@/assets/wi-fi.png"
-        alt="wifi-icon"
-      />
-    </div>
-    <div class="right-icons d-flex justify-center align-center">
-      <img
-        width="20px"
-        height="20px"
-        src="@/assets/speaker.png"
-        alt="speaker-volume-icon"
-      />
-    </div>
+    <BaseIcon name="help" />
+    <BaseIcon
+      name="collapse_arrow"
+      width="20"
+      height="20"
+      classIcon="right-icons"
+    />
+    <BaseIcon
+      name="battery_level"
+      width="20"
+      height="20"
+      classIcon="right-icons"
+    />
+    <BaseIcon name="wi-fi" width="20" height="20" classIcon="right-icons" />
+    <BaseIcon name="speaker" width="20" height="20" classIcon="right-icons" />
     <div
       class="right-icons date d-flex flex-column align-center justify-space-around"
     >
       <span>{{ currentTime }}</span>
       <span>{{ currentDate }}</span>
     </div>
-    <div class="right-icons px-3 mr-2 d-flex justify-center align-center">
-      <img
-        width="20px"
-        height="20px"
-        src="@/assets/notif icon.png"
-        alt="notification-icon"
-      />
-    </div>
+    <BaseIcon
+      name="notif icon"
+      width="20"
+      height="20"
+      classIcon="right-icons px-3 mr-2"
+    />
     <div class="verticalBar"></div>
   </div>
 </template>
@@ -130,12 +96,9 @@ export default {
 
 <style scoped>
 .winBar {
-  height: 50px;
   background-color: rgb(0, 66, 117);
   display: flex;
-  position: fixed;
-  bottom: 0%;
-  width: 100%;
+  height: 50px;
 }
 .magnifyReverse {
   transform: rotate(90deg);
@@ -153,6 +116,7 @@ export default {
 }
 .win10:hover {
   color: rgb(28, 146, 224) !important;
+  outline: none !important;
 }
 .date {
   color: gainsboro;
@@ -165,7 +129,7 @@ export default {
 }
 .modalwin10 {
   position: absolute;
-  bottom: 100%;
+  bottom: 50px;
   width: 40%;
   height: 80vh;
   background-color: rgb(8, 97, 165);

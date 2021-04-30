@@ -71,11 +71,10 @@
         <v-row justify="space-between" class="pa-2">
           <v-col class="d-flex align-center flex-column MenuBg" cols="3">
             <v-img
-              max-width="50px"
               src="@/assets/react_native_64px.png"
               alt="reatc-native-icon"
             ></v-img>
-            <span style="font-size: 0.48rem">React Native</span>
+            <span class="skills">Native</span>
           </v-col>
           <v-col class="d-flex align-center flex-column MenuBg" cols="3">
             <v-img src="@/assets/php.png" alt="php-icon"></v-img>

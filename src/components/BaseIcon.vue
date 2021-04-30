@@ -1,6 +1,11 @@
 <template>
-  <div class="icons d-flex justify-center align-center">
-    <img :alt="imgSource" :src="imgsource" />
+  <div class="icons d-flex justify-center align-center" :class="classIcon">
+    <img
+      :width="`${width}px`"
+      :height="`${height}px`"
+      :src="require(`@/assets/${name}.png`)"
+      :alt="name"
+    />
   </div>
 </template>
 
@@ -16,18 +21,9 @@ export default {
       type: [Number, String],
       default: 24,
     },
-  },
-  data() {
-    return {
-      imgsrc: "../assets/" + this.name + ".png",
-    };
-  },
-  created() {
-    this.imgsrc = "../assets/" + this.name + ".png";
-  },
-  computed: {
-    imgSource() {
-      return "../assets/" + this.name + ".png";
+    classIcon: {
+      type: String,
+      default: "icons",
     },
   },
 };

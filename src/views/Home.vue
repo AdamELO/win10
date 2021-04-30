@@ -32,7 +32,11 @@
             <span class="desktopIconFont">VS Code</span>
           </div>
         </v-col>
-        <v-col cols="11"> </v-col>
+        <v-col cols="11">
+          <v-layout class="height" style="border: solid 2px red">
+            <h1>win10 folder</h1>
+          </v-layout>
+        </v-col>
       </v-row>
     </v-container>
   </div>
