@@ -10,8 +10,8 @@
         mdi-microsoft-windows
       </v-icon>
     </button>
-    <v-icon class="magnifyReverse icons" color="white" medium>
-      mdi-magnify
+    <v-icon class="icons" color="white" medium>
+      mdi-magnify mdi-rotate-90
     </v-icon>
     <BaseIcon name="mail_icon" />
     <BaseIcon name="explorer-6" />
@@ -32,6 +32,9 @@
       classIcon="right-icons"
     />
     <BaseIcon name="wi-fi" width="20" height="20" classIcon="right-icons" />
+    <!-- <v-icon class="right-icons" color="white" small>
+      mdi-wifi mdi-rotate-315
+    </v-icon> -->
     <BaseIcon name="speaker" width="20" height="20" classIcon="right-icons" />
     <div
       class="right-icons date d-flex flex-column align-center justify-space-around"
@@ -45,7 +48,15 @@
       height="20"
       classIcon="right-icons px-3 mr-2"
     />
-    <div class="verticalBar"></div>
+    <!-- <v-icon class="right-icons" color="white" dense>
+      mdi-tooltip-outline
+    </v-icon> -->
+    <router-link
+      class="verticalBar"
+      style="text-decoration: none; color: inherit"
+      to="/"
+    >
+    </router-link>
   </div>
 </template>
 
@@ -75,7 +86,9 @@ export default {
         today.getMonth() + 1 >= 10
           ? today.getMonth() + 1
           : "0" + (today.getMonth() + 1);
-      const date = `${today.getDate()}-${month}-${today
+      const day =
+        today.getDate() >= 10 ? today.getDate() : "0" + today.getDate();
+      const date = `${day}-${month}-${today
         .getFullYear()
         .toString()
         .substr(-2)}`;
@@ -99,9 +112,6 @@ export default {
   background-color: rgb(0, 66, 117);
   display: flex;
   height: 50px;
-}
-.magnifyReverse {
-  transform: rotate(90deg);
 }
 .icons {
   padding: 0 11.5px;
