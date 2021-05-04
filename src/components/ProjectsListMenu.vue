@@ -1,28 +1,9 @@
 <template>
   <v-col cols="5" class="listProjects">
     <div width="100%" class="py-2">
-      <u>Projects List By Skills</u>
+      <span>Projects List</span>
     </div>
-    <div width="100%" class="align-center d-flex py-2 menuHover">
-      <v-icon color="white" small> mdi-vuejs </v-icon>
-      <span class="ml-2">VUE</span>
-    </div>
-    <div
-      class="menuHover py-2"
-      v-for="project in filterVue"
-      :key="project.projectName"
-    >
-      <span>- {{ project.projectName }}</span>
-    </div>
-    <div width="100%" class="align-center d-flex py-2 menuHover">
-      <v-icon color="white" small> mdi-react </v-icon>
-      <span class="ml-2">React</span>
-    </div>
-    <div
-      class="menuHover py-2"
-      v-for="project in filterReact"
-      :key="project.projectName"
-    >
+    <div class="menuHover py-2" v-for="project in projects" :key="project.id">
       <span>- {{ project.projectName }}</span>
     </div>
   </v-col>
@@ -33,18 +14,18 @@ export default {
   props: {
     projects: Array,
   },
-  computed: {
-    filterVue() {
-      return this.projects.filter((project) => {
-        return project.framework.includes("Vue");
-      });
-    },
-    filterReact() {
-      return this.projects.filter((project) => {
-        return project.framework.includes("React");
-      });
-    },
-  },
+  // computed: {
+  //   filterVue() {
+  //     return this.projects.filter((project) => {
+  //       return project.framework.includes("Vue");
+  //     });
+  //   },
+  //   filterReact() {
+  //     return this.projects.filter((project) => {
+  //       return project.framework.includes("React");
+  //     });
+  //   },
+  // },
 };
 </script>
 

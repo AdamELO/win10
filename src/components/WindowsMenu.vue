@@ -12,6 +12,7 @@
 import MiniMenu from "@/components/MiniMenu";
 import MaxiMenu from "@/components/MaxiMenu";
 import ProjectsListMenu from "@/components/ProjectsListMenu";
+import { mapState } from "vuex";
 
 export default {
   components: {
@@ -19,21 +20,8 @@ export default {
     MiniMenu,
     ProjectsListMenu,
   },
-  data() {
-    return {
-      projects: [
-        {
-          framework: ["Vue", "JavaScript", "Laravel"],
-          projectName: "Portfolio",
-          img: null,
-        },
-        {
-          framework: ["React Native", "React", "JavaScript"],
-          projectName: "Restaurants Search",
-          img: null,
-        },
-      ],
-    };
+  computed: {
+    ...mapState(["projects"]),
   },
 };
 </script>

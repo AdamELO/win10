@@ -2,7 +2,7 @@
   <v-col cols="6" width="100%" class="listMenu">
     <div>
       <div class="py-2">
-        <u>Contact</u>
+        <span>Contact</span>
       </div>
       <v-container>
         <v-row justify="space-between" class="pa-2">
@@ -23,7 +23,7 @@
     </div>
     <div>
       <div class="py-2">
-        <u>Skills</u>
+        <span>Skills</span>
       </div>
       <v-container>
         <v-row justify="space-between" class="pa-2">
