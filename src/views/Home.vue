@@ -7,39 +7,10 @@
             <img width="48px" src="@/assets/trash.png" alt="trash_can_icon" />
             <span class="desktopIconFont">Recycle bin</span>
           </div>
-          <router-link
-            style="text-decoration: none; color: inherit"
-            to="/projects"
-          >
-            <div class="desktop_hov d-flex flex-column align-center mb-2 py-1">
-              <img
-                width="48px"
-                src="@/assets/project_icon.png"
-                alt="project_icon"
-              />
-              <span class="desktopIconFont">Projects</span>
-            </div>
-            <div class="desktop_hov d-flex flex-column align-center mb-2 py-1">
-              <img
-                width="48px"
-                src="@/assets/devskills.png"
-                alt="skills_icon"
-              />
-              <span class="desktopIconFont">Skills</span>
-            </div>
-          </router-link>
-          <div class="desktop_hov d-flex flex-column align-center mb-2 py-1">
-            <img
-              width="48px"
-              src="@/assets/adam_avatar.png"
-              alt="avatar_icon"
-            />
-            <span class="desktopIconFont">About</span>
-          </div>
-          <div class="desktop_hov d-flex flex-column align-center py-1">
-            <img width="48px" src="@/assets/form_64px.png" alt="contact_icon" />
-            <span class="desktopIconFont">Contact Form</span>
-          </div>
+          <DesktopMenu img="project_icon" route="projects" />
+          <DesktopMenu img="devskills" route="skills" />
+          <DesktopMenu img="adam_avatar" route="about" />
+          <DesktopMenu img="form_64px" route="contact" />
         </v-col>
         <v-col cols="11" class="px-5">
           <router-view />
@@ -50,8 +21,13 @@
 </template>
 
 <script>
+import DesktopMenu from "@/components/DesktopMenu.vue";
+
 export default {
   name: "Home",
+  components: {
+    DesktopMenu,
+  },
 };
 </script>
 
