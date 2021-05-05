@@ -1,13 +1,15 @@
 <template>
   <div class="height white">
-    <v-system-bar window color="#0078d7">
+    <v-system-bar class="systemBar" window color="#0078d7">
       <BaseIcon name="explorer-6" width="18px" height="18px" />
       <BaseIcon name="vertical_line" width="18px" height="18px" />
       <span class="white--text">Projects Explorer</span>
       <v-spacer></v-spacer>
-      <v-icon class="mr-4" color="white">mdi-minus</v-icon>
-      <v-icon class="ma-2" color="white">mdi-checkbox-blank-outline</v-icon>
-      <v-icon class="ml-4" color="white">mdi-close</v-icon>
+      <v-icon class="ma-3" color="white">mdi-minus</v-icon>
+      <v-icon class="ma-3" color="white">mdi-checkbox-blank-outline</v-icon>
+      <router-link style="text-decoration: none; color: inherit" to="/">
+        <v-icon class="closeBtn" color="white">mdi-close</v-icon>
+      </router-link>
     </v-system-bar>
     <div class="d-flex justify-space-between pt-1">
       <div class="d-flex flex-row justify-center align-center">
@@ -42,11 +44,6 @@
         </div>
         <div class="d-flex align-center my-2 hoverExplorerMenu">
           <v-icon small class="mx-1">mdi-chevron-right</v-icon>
-          <BaseIcon name="mail_icon" width="15px" height="15px" />
-          <span class="ml-2">Contact Form</span>
-        </div>
-        <div class="d-flex align-center my-2 hoverExplorerMenu">
-          <v-icon small class="mx-1">mdi-chevron-right</v-icon>
           <BaseIcon name="skills" width="15px" height="15px" />
           <span class="ml-2">Skills</span>
         </div>
@@ -55,36 +52,44 @@
           <BaseIcon name="adam_avatar" width="15px" height="15px" />
           <span class="ml-2">About</span>
         </div>
+        <div class="d-flex align-center my-2 hoverExplorerMenu">
+          <v-icon small class="mx-1">mdi-chevron-right</v-icon>
+          <BaseIcon name="mail_icon" width="15px" height="15px" />
+          <span class="ml-2">Contact Form</span>
+        </div>
       </v-col>
-      <v-col cols="10" class="px-5 scrollProjects">
-        <div
+      <v-col cols="10" @scroll="handleScroll" class="px-5 scrollProjects">
+        <v-row
           v-for="project in projects"
           :key="project.id"
           class="d-flex align-center justify-space-between hoverExplorerMenu explorer my-1"
           style="border-bottom: 1px solid gainsboro; padding: 2px"
         >
-          <img
-            width="200px"
-            :src="require(`@/assets/Projects/${project.img}.png`)"
-            :alt="project.img"
-          />
-          <span>{{ project.projectName }}</span>
-          <div>
+          <v-col cols="4">
+            <img
+              width="100%"
+              :src="require(`@/assets/Projects/${project.img}.png`)"
+              :alt="project.img"
+            />
+          </v-col>
+          <v-col cols="3" class="d-flex justify-center align-center">
+            {{ project.projectName }}
+          </v-col>
+          <v-col cols="5 d-flex justify-center align-center">
             <span
-              class="mx-1 d-flex flex-column"
+              class="mx-1"
               v-for="skills in project.framework"
               :key="skills"
               >{{ skills }}</span
             >
-          </div>
-        </div>
+          </v-col>
+        </v-row>
       </v-col>
       <v-row>
         <v-col cols="2"></v-col>
         <v-col cols="10">
           <div
-            v-if="scroll"
-            @scroll="onScroll"
+            v-if="scroll == false"
             class="d-flex justify-center align-center"
           >
             <span class="scroll-icon">
@@ -99,15 +104,18 @@
 
 <script>
 import { mapState } from "vuex";
+
 export default {
   data() {
     return {
-      scroll: true,
+      scroll: false,
     };
   },
   methods: {
-    onScroll({ target: { scrollTop, clientHeight, scrollHeight } }) {
-      if (scrollTop + clientHeight >= scrollHeight) {
+    handleScroll: function (e) {
+      if (e.target.offsetHeight + e.target.scrollTop >= e.target.scrollHeight) {
+        this.scroll = true;
+      } else {
         this.scroll = false;
       }
     },
@@ -122,6 +130,14 @@ export default {
 </script>
 
 <style scoped>
+.systemBar {
+  padding: 0 !important;
+  padding-left: 5px !important;
+}
+.closeBtn {
+  padding: 6px !important;
+  margin-right: 0 !important;
+}
 .explorerBorder {
   border: solid 1px gainsboro !important;
 }
@@ -152,7 +168,7 @@ export default {
   border-radius: 50%;
   transform-origin: top center;
   backface-visibility: hidden;
-  animation: scroll_2 2s ease-out infinite;
+  animation: scrollProjects 2s ease-out infinite;
 }
 .scroll-icon {
   display: block;
@@ -162,7 +178,7 @@ export default {
   border: 3px solid rgb(38, 145, 207);
   border-radius: 1em;
 }
-@keyframes scroll_2 {
+@keyframes scrollProjects {
   0% {
     transform: translateY(0);
     opacity: 1;
@@ -178,5 +194,8 @@ export default {
     transform: translateY(0);
     opacity: 0;
   }
+}
+.closeBtn:hover {
+  background: red;
 }
 </style>

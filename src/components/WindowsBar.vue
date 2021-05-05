@@ -15,8 +15,8 @@
     </v-icon>
     <BaseIcon name="mail_icon" />
     <BaseIcon name="explorer-6" />
+    <v-icon class="icons" color="white" medium> mdi-github </v-icon>
     <BaseIcon name="chrome" />
-    <BaseIcon name="visual_studio_code" />
     <v-spacer></v-spacer>
     <BaseIcon name="help" />
     <BaseIcon
@@ -32,9 +32,6 @@
       classIcon="right-icons"
     />
     <BaseIcon name="wi-fi" width="20" height="20" classIcon="right-icons" />
-    <!-- <v-icon class="right-icons" color="white" small>
-      mdi-wifi mdi-rotate-315
-    </v-icon> -->
     <BaseIcon name="speaker" width="20" height="20" classIcon="right-icons" />
     <div
       class="right-icons date d-flex flex-column align-center justify-space-around"
@@ -48,9 +45,6 @@
       height="20"
       classIcon="right-icons px-3 mr-2"
     />
-    <!-- <v-icon class="right-icons" color="white" dense>
-      mdi-tooltip-outline
-    </v-icon> -->
     <router-link
       class="verticalBar"
       style="text-decoration: none; color: inherit"

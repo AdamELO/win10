@@ -9,8 +9,8 @@ export default new Vuex.Store({
       {
         framework: ["Vue", "JavaScript"],
         projectName: "Portfolio",
-        img: "restaurants",
-        url: "@/assets/adam_avatar.png",
+        img: "portfolio",
+        url: "@/assets/portfolio.png",
         id: 10,
       },
       {
