@@ -1,6 +1,6 @@
 <template>
   <Explorer>
-    <h1>skills</h1>
+    <h1>Projo</h1>
   </Explorer>
 </template>
 
@@ -10,6 +10,12 @@ import Explorer from "@/components/Explorer.vue";
 export default {
   components: {
     Explorer,
+  },
+  props: {
+    project: {
+      type: Object,
+      require: true,
+    },
   },
 };
 </script>

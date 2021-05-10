@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Projects from "../views/Projects.vue";
+import ProjectsShow from "../views/ProjectsShow.vue";
 import Skills from "../views/Skills.vue";
 import About from "../views/About.vue";
 import Contact from "../views/Contact.vue";
@@ -38,6 +39,12 @@ const routes = [
         name: "Projects",
         props: true,
         component: Projects,
+      },
+      {
+        path: "/projects/:id",
+        name: "Projects-Show",
+        props: true,
+        component: ProjectsShow,
       },
     ],
   },
