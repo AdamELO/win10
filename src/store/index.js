@@ -9,72 +9,192 @@ export default new Vuex.Store({
       {
         framework: ["Vue", "JavaScript"],
         projectName: "Portfolio",
-        img: "portfolio",
-        url: "@/assets/portfolio.png",
         id: 10,
+        images: [
+          {
+            src_alt: "portfolio",
+            src: "@/assets/portfolio.png",
+          },
+        ],
       },
       {
         framework: ["React Native", "JavaScript"],
         projectName: "Restaurants Search",
-        img: "restaurants",
-        url: "@/assets/projects/restaurants.png",
         id: 9,
+        images: [
+          {
+            src_alt: "restaurants",
+            src: "@/assets/projects/restaurants.png",
+          },
+        ],
       },
       {
         framework: ["Laravel", "TailwindCss", "Php", "LiveWire"],
         projectName: "Real time chat",
-        img: "whatsup_home",
-        url: "@/assets/projects/whatsup_home.png",
         id: 8,
+        images: [
+          {
+            src_alt: "whatsup_home",
+            src: "@/assets/projects/whatsup_home.png",
+          },
+          {
+            src_alt: "whats'up_login",
+            src: "@/assets/projects/whats'up_login.png",
+          },
+          {
+            src_alt: "whatsup_add_friend",
+            src: "@/assets/projects/whatsup_add_friend.png",
+          },
+          {
+            src_alt: "whatsup_chat",
+            src: "@/assets/projects/whatsup_chat.png",
+          },
+          {
+            src_alt: "whatsup_dash",
+            src: "@/assets/projects/whatsup_dash.png",
+          },
+        ],
       },
       {
         framework: ["Php", "Laravel 7"],
         projectName: "The Labs Backoffice",
-        img: "labs",
-        url: "@/assets/projects/labs.png",
         id: 7,
+        images: [
+          {
+            src_alt: "labs",
+            src: "@/assets/projects/labs.png",
+          },
+          {
+            src_alt: "labsservice",
+            src: "@/assets/projects/labsservice.png",
+          },
+          {
+            src_alt: "labstesti",
+            src: "@/assets/projects/labstesti.png",
+          },
+          {
+            src_alt: "articlelabs",
+            src: "@/assets/projects/articlelabs.png",
+          },
+        ],
       },
       {
         framework: ["Php", "Laravel 7"],
         projectName: "MolenGeek Room Booking System",
-        img: "MolengeekLogin",
-        url: "@/assets/projects/MolengeekLogin.png",
         id: 6,
+        images: [
+          {
+            src_alt: "MolengeekLogin",
+            src: "@/assets/projects/MolengeekLogin.png",
+          },
+          {
+            src_alt: "tablette",
+            src: "@/assets/projects/tablette.png",
+          },
+          {
+            src_alt: "reservation",
+            src: "@/assets/projects/reservation.png",
+          },
+          {
+            src_alt: "agenda2",
+            src: "@/assets/projects/agenda2.png",
+          },
+          {
+            src_alt: "backofficemolengeek",
+            src: "@/assets/projects/backofficemolengeek.png",
+          },
+        ],
       },
       {
         framework: ["React", "JavaScript"],
         projectName: "Yahtzee Game",
-        img: "yahtzeeStart",
-        url: "@/assets/projects/yahtzeeStart.png",
         id: 5,
+        images: [
+          {
+            src_alt: "yahtzeeStart",
+            src: "@/assets/projects/yahtzeeStart.png",
+          },
+          {
+            src_alt: "yathzeeRoll",
+            src: "@/assets/projects/yathzeeRoll.png",
+          },
+          {
+            src_alt: "yahtzeeEnd",
+            src: "@/assets/projects/yahtzeeEnd.png",
+          },
+        ],
       },
       {
         framework: ["Php", "Laravel 7"],
         projectName: "The Real Wedding Backoffice",
-        img: "weddingbo",
-        url: "@/assets/projects/weddingbo.png",
         id: 4,
+        images: [
+          {
+            src_alt: "weddingbo",
+            src: "@/assets/projects/weddingbo.png",
+          },
+          {
+            src_alt: "weddinggal",
+            src: "@/assets/projects/weddinggal.png",
+          },
+          {
+            src_alt: "weddingheader",
+            src: "@/assets/projects/weddingheader.png",
+          },
+          {
+            src_alt: "weddingabout",
+            src: "@/assets/projects/weddingabout.png",
+          },
+        ],
       },
       {
         framework: ["Html5", "Css3", "JavaScript"],
         projectName: "Emporium Website",
-        img: "empor",
-        url: "@/assets/projects/empor.png",
         id: 3,
+        images: [
+          {
+            src_alt: "empor",
+            src: "@/assets/projects/empor.png",
+          },
+          {
+            src_alt: "emporiumcarousel",
+            src: "@/assets/projects/emporiumcarousel.png",
+          },
+          {
+            src_alt: "emporiumproducts",
+            src: "@/assets/projects/emporiumproducts.png",
+          },
+        ],
       },
       {
         framework: ["JQuery", "JavaScript"],
         projectName: "Api Weather",
-        img: "weather",
-        url: "@/assets/projects/weather.png",
         id: 2,
+        images: [
+          {
+            src_alt: "weather",
+            src: "@/assets/projects/weather.png",
+          },
+        ],
       },
       {
         framework: ["Figma"],
         projectName: "SpriteSheet Loaders",
-        img: "rainbowloader",
-        url: "@/assets/projects/rainbowloader.png",
         id: 1,
+        images: [
+          {
+            src_alt: "rainbowloader",
+            src: "@/assets/projects/rainbowloader.png",
+          },
+          {
+            src_alt: "leafwindloader",
+            src: "@/assets/projects/leafwindloader.png",
+          },
+          {
+            src_alt: "halloweenloader",
+            src: "@/assets/projects/halloweenloader.png",
+          },
+        ],
       },
     ],
     skills: [

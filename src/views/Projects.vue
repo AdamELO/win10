@@ -12,8 +12,8 @@
         <v-col cols="4">
           <img
             width="100%"
-            :src="require(`@/assets/Projects/${project.img}.png`)"
-            :alt="project.img"
+            :src="require(`@/assets/Projects/${project.images[0].src_alt}.png`)"
+            :alt="project.images[0].src_alt"
           />
         </v-col>
         <v-col cols="3" class="d-flex justify-center align-center">
