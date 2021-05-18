@@ -4,7 +4,10 @@
       <router-link
         class="d-flex align-center justify-space-between hoverExplorerMenu explorer my-1"
         style="text-decoration: none; color: inherit"
-        :to="{ name: 'Projects-Show', params: { id: project.id } }"
+        :to="{
+          name: 'Projects-Show',
+          params: { project: project, id: project.id },
+        }"
       >
         <v-col cols="4">
           <img

@@ -77,6 +77,68 @@ export default new Vuex.Store({
         id: 1,
       },
     ],
+    skills: [
+      {
+        id: 1,
+        name: "Html",
+        icon: "html5",
+      },
+      {
+        id: 2,
+        name: "Css",
+        icon: "css3",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+        icon: "javascript",
+      },
+      // {
+      //   id: 4,
+      //   name: "Bootstrap",
+      //   icon: "bootstrap",
+      // },
+      // {
+      //   id: 5,
+      //   name: "TailWindCss",
+      //   icon: "tailwind-css",
+      // },
+      // {
+      //   id: 6,
+      //   name: "Vuetify",
+      //   icon: "vuetify",
+      // },
+      // {
+      //   id: 7,
+      //   name: "JQuery",
+      //   icon: "jquery",
+      // },
+      // {
+      //   id: 8,
+      //   name: "React",
+      //   icon: "react_64px",
+      // },
+      // {
+      //   id: 9,
+      //   name: "Vue",
+      //   icon: "vue_js_64px",
+      // },
+      // {
+      //   id: 10,
+      //   name: "React Native",
+      //   icon: "react_native_64px",
+      // },
+      // {
+      //   id: 11,
+      //   name: "Php",
+      //   icon: "php",
+      // },
+      // {
+      //   id: 12,
+      //   name: "Laravel",
+      //   icon: "laravel_64px",
+      // },
+    ],
   },
   mutations: {},
   actions: {},
