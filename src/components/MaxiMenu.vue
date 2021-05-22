@@ -27,33 +27,113 @@
       </div>
       <v-container>
         <v-row justify="space-between" class="pa-2">
-          <v-col
-            v-for="skill in skills"
-            :key="skill.id"
-            class="d-flex align-center flex-column MenuBg"
-            cols="3"
-          >
+          <v-col class="d-flex align-center flex-column MenuBg" cols="3">
             <v-img
-              :src="require(`@/assets/Skills/${skill.icon}.png`)"
-              :alt="`${skill.name}-icon`"
+              src="@/assets/Skills/html5.png"
+              alt="`html-icon`"
               width="50px"
             ></v-img>
-            <span class="skills">{{ skill.name }}</span>
+            <span class="skills">Html</span>
+          </v-col>
+          <v-col class="d-flex align-center flex-column MenuBg" cols="3">
+            <v-img
+              src="@/assets/Skills/css3.png"
+              alt="`html-icon`"
+              width="50px"
+            ></v-img>
+            <span class="skills">Css</span>
+          </v-col>
+          <v-col class="d-flex align-center flex-column MenuBg" cols="3">
+            <v-img
+              src="@/assets/Skills/javascript.png"
+              alt="`html-icon`"
+              width="50px"
+            ></v-img>
+            <span class="skills">Javascript</span>
+          </v-col>
+        </v-row>
+        <v-row justify="space-between" class="pa-2">
+          <v-col class="d-flex align-center flex-column MenuBg" cols="3">
+            <v-img
+              src="@/assets/Skills/bootstrap.png"
+              alt="`html-icon`"
+              width="50px"
+            ></v-img>
+            <span class="skills">Bootstrap</span>
+          </v-col>
+          <v-col class="d-flex align-center flex-column MenuBg" cols="3">
+            <v-img
+              src="@/assets/Skills/tailwind-css.png"
+              alt="`html-icon`"
+              width="50px"
+            ></v-img>
+            <span class="skills">TailwindCss</span>
+          </v-col>
+          <v-col class="d-flex align-center flex-column MenuBg" cols="3">
+            <v-img
+              src="@/assets/Skills/vuetify.png"
+              alt="`html-icon`"
+              width="50px"
+            ></v-img>
+            <span class="skills">Vuetify</span>
+          </v-col>
+        </v-row>
+        <v-row justify="space-between" class="pa-2">
+          <v-col class="d-flex align-center flex-column MenuBg" cols="3">
+            <v-img
+              src="@/assets/Skills/jquery.png"
+              alt="`html-icon`"
+              width="50px"
+            ></v-img>
+            <span class="skills">JQuery</span>
+          </v-col>
+          <v-col class="d-flex align-center flex-column MenuBg" cols="3">
+            <v-img
+              src="@/assets/Skills/react_64px.png"
+              alt="`html-icon`"
+              width="50px"
+            ></v-img>
+            <span class="skills">React</span>
+          </v-col>
+          <v-col class="d-flex align-center flex-column MenuBg" cols="3">
+            <v-img
+              src="@/assets/Skills/vue_js_64px.png"
+              alt="`html-icon`"
+              width="50px"
+            ></v-img>
+            <span class="skills">Vue</span>
+          </v-col>
+        </v-row>
+        <v-row justify="space-between" class="pa-2">
+          <v-col class="d-flex align-center flex-column MenuBg" cols="3">
+            <v-img
+              src="@/assets/Skills/react_native_64px.png"
+              alt="`html-icon`"
+              width="50px"
+            ></v-img>
+            <span class="skills">R.Native</span>
+          </v-col>
+          <v-col class="d-flex align-center flex-column MenuBg" cols="3">
+            <v-img
+              src="@/assets/Skills/php.png"
+              alt="`html-icon`"
+              width="50px"
+            ></v-img>
+            <span class="skills">Php</span>
+          </v-col>
+          <v-col class="d-flex align-center flex-column MenuBg" cols="3">
+            <v-img
+              src="@/assets/Skills/laravel_64px.png"
+              alt="`html-icon`"
+              width="50px"
+            ></v-img>
+            <span class="skills">Laravel</span>
           </v-col>
         </v-row>
       </v-container>
     </div>
   </v-col>
 </template>
-
-<script>
-import { mapState } from "vuex";
-export default {
-  computed: {
-    ...mapState(["skills"]),
-  },
-};
-</script>
 
 <style scoped>
 .listMenu {

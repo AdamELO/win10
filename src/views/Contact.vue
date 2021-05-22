@@ -1,45 +1,45 @@
 <template>
   <Explorer>
     <v-form v-model="valid">
-          <v-container>
-            <v-row class="d-flex justify-center align-center">
-              <v-col cols="2"></v-col>
-              <v-col cols="8">
-                <v-text-field
-                  :rules="subjectRules"
-                  label="Subject"
-                  required
-                ></v-text-field>
-              </v-col>
-              <v-col cols="2"></v-col>
-              <v-col cols="4">
-                <v-text-field
-                  :rules="nameRules"
-                  label="Name"
-                  required
-                ></v-text-field>
-              </v-col>
+      <v-container>
+        <v-row class="d-flex justify-center align-center">
+          <v-col cols="2"></v-col>
+          <v-col cols="8">
+            <v-text-field
+              :rules="subjectRules"
+              label="Subject"
+              required
+            ></v-text-field>
+          </v-col>
+          <v-col cols="2"></v-col>
+          <v-col cols="4">
+            <v-text-field
+              :rules="nameRules"
+              label="Name"
+              required
+            ></v-text-field>
+          </v-col>
 
-              <v-col cols="4">
-                <v-text-field
-                  :rules="emailRules"
-                  label="E-mail"
-                  required
-                ></v-text-field>
-              </v-col>
-              <v-col cols="8">
-                <v-textarea
-                  label="Message"
-                  required
-                  :rules="messageRules"
-                ></v-textarea>
-              </v-col>
-            </v-row>
-          </v-container>
-          <div class="text-center">
-            <v-btn color="primary"> Send </v-btn>
-          </div>
-        </v-form>
+          <v-col cols="4">
+            <v-text-field
+              :rules="emailRules"
+              label="E-mail"
+              required
+            ></v-text-field>
+          </v-col>
+          <v-col cols="8">
+            <v-textarea
+              label="Message"
+              required
+              :rules="messageRules"
+            ></v-textarea>
+          </v-col>
+        </v-row>
+      </v-container>
+      <div class="text-center">
+        <v-btn color="primary"> Send </v-btn>
+      </div>
+    </v-form>
   </Explorer>
 </template>
 
