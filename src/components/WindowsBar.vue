@@ -13,10 +13,32 @@
     <v-icon class="icons" color="white" medium>
       mdi-magnify mdi-rotate-90
     </v-icon>
-    <BaseIcon name="mail_icon" />
-    <BaseIcon name="explorer-6" />
-    <v-icon class="icons" color="white" medium> mdi-github </v-icon>
-    <BaseIcon name="chrome" />
+    <a
+      href="mailto:elomari-adam@hotmail.com"
+      style="text-decoration: none; color: inherit; display: flex"
+    >
+      <BaseIcon name="mail_icon" />
+    </a>
+    <router-link
+      to="/projects"
+      style="text-decoration: none; color: inherit; display: flex"
+    >
+      <BaseIcon name="explorer-6" />
+    </router-link>
+    <a
+      href="https://github.com/AdamELO"
+      style="text-decoration: none; color: inherit; display: flex"
+      target="_blank"
+    >
+      <v-icon class="icons" color="white" medium> mdi-github </v-icon>
+    </a>
+    <a
+      href="https://google.com"
+      style="text-decoration: none; color: inherit; display: flex"
+      target="_blank"
+    >
+      <BaseIcon name="chrome" />
+    </a>
     <v-spacer></v-spacer>
     <BaseIcon name="help" />
     <BaseIcon

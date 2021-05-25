@@ -6,17 +6,38 @@
       </div>
       <v-container>
         <v-row justify="space-between" class="pa-2">
-          <v-col class="d-flex align-center flex-column MenuBg" cols="3">
-            <v-img src="@/assets/mail_64px.png" alt="mail-icon"></v-img>
-            <span class="skills">Mail</span>
+          <v-col class="MenuBg" cols="3">
+            <a
+              class="d-flex align-center flex-column"
+              href="mailto:elomari-adam@hotmail.com"
+              style="text-decoration: none; color: inherit"
+            >
+              <v-img src="@/assets/mail_64px.png" alt="mail-icon"></v-img>
+              <span class="skills">Mail</span>
+            </a>
           </v-col>
-          <v-col class="d-flex align-center flex-column MenuBg" cols="3">
-            <v-img src="@/assets/linkedin_64px.png" alt="linkedin-icon"></v-img>
-            <span class="skills">Linkedin</span>
+          <v-col class="MenuBg" cols="3">
+            <a
+              class="d-flex align-center flex-column"
+              href="https://www.linkedin.com/in/adam-el-omari"
+              style="text-decoration: none; color: inherit"
+            >
+              <v-img
+                src="@/assets/linkedin_64px.png"
+                alt="linkedin-icon"
+              ></v-img>
+              <span class="skills">Linkedin</span>
+            </a>
           </v-col>
-          <v-col class="d-flex align-center flex-column MenuBg" cols="3">
-            <v-img src="@/assets/form_64px.png" alt="mail-form-icon"></v-img>
-            <span class="skills">Form</span>
+          <v-col class="MenuBg" cols="3">
+            <router-link
+              class="d-flex align-center flex-column"
+              style="text-decoration: none; color: inherit"
+              to="/contact"
+            >
+              <v-img src="@/assets/form_64px.png" alt="mail-form-icon"></v-img>
+              <span class="skills">Form</span>
+            </router-link>
           </v-col>
         </v-row>
       </v-container>

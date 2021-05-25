@@ -4,7 +4,14 @@
       <span>Projects List</span>
     </div>
     <div class="menuHover py-2" v-for="project in projects" :key="project.id">
-      <span>- {{ project.projectName }}</span>
+      <router-link
+        :to="{
+          name: 'Projects-Show',
+          params: { project: project, id: project.id },
+        }"
+        style="text-decoration: none; color: inherit"
+        >- {{ project.projectName }}</router-link
+      >
     </div>
   </v-col>
 </template>
@@ -14,18 +21,6 @@ export default {
   props: {
     projects: Array,
   },
-  // computed: {
-  //   filterVue() {
-  //     return this.projects.filter((project) => {
-  //       return project.framework.includes("Vue");
-  //     });
-  //   },
-  //   filterReact() {
-  //     return this.projects.filter((project) => {
-  //       return project.framework.includes("React");
-  //     });
-  //   },
-  // },
 };
 </script>
 

@@ -29,7 +29,7 @@ export default new Vuex.Store({
         ],
       },
       {
-        framework: ["Laravel", "TailwindCss", "Php", "LiveWire"],
+        framework: ["Laravel 8", "TailwindCss", "Php", "LiveWire"],
         projectName: "Real time chat",
         id: 8,
         images: [

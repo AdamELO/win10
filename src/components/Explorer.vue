@@ -22,7 +22,13 @@
           <v-icon class="mx-1">mdi-chevron-right</v-icon>
           <span>PC</span>
           <v-icon class="mx-1">mdi-chevron-right</v-icon>
-          <span>{{ currentRouteName }}</span>
+          <span v-if="currentRouteName !== 'Projects-Show'">{{
+            currentRouteName
+          }}</span>
+          <span v-else
+            >Projects <v-icon class="mx-1">mdi-chevron-right</v-icon
+            ><b>{{ this.$route.path }}</b></span
+          >
         </div>
       </v-toolbar>
       <div class="mx-3">
