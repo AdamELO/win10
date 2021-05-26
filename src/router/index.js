@@ -41,7 +41,7 @@ const routes = [
         component: Projects,
       },
       {
-        path: "/projects/:id",
+        path: "/projects/:name",
         name: "Projects-Show",
         props: true,
         component: ProjectsShow,

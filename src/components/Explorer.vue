@@ -27,7 +27,7 @@
           }}</span>
           <span v-else
             >Projects <v-icon class="mx-1">mdi-chevron-right</v-icon
-            ><b>{{ this.$route.path }}</b></span
+            ><b>{{ routeProjectName }}</b></span
           >
         </div>
       </v-toolbar>
@@ -115,6 +115,11 @@ export default {
     },
   },
   computed: {
+    routeProjectName() {
+      let path = this.$route.path;
+      let projectName = path.replace("/projects/", "").replaceAll("%20", " ");
+      return projectName;
+    },
     currentRouteName() {
       return this.$route.name;
     },

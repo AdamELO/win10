@@ -7,7 +7,7 @@
       <router-link
         :to="{
           name: 'Projects-Show',
-          params: { project: project, id: project.id },
+          params: { project: project, name: project.projectName },
         }"
         style="text-decoration: none; color: inherit"
         >- {{ project.projectName }}</router-link

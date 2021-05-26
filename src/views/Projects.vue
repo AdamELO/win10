@@ -6,7 +6,7 @@
         style="text-decoration: none; color: inherit"
         :to="{
           name: 'Projects-Show',
-          params: { project: project, id: project.id },
+          params: { project: project, name: project.projectName },
         }"
       >
         <v-col cols="4">
