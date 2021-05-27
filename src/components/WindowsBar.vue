@@ -86,15 +86,19 @@ export default {
     return {
       currentTime: "",
       currentDate: "",
-      isOpenWin10: false,
     };
   },
   created() {
     setInterval(this.getNow, 1000);
   },
+  computed: {
+    isOpenWin10() {
+      return this.$store.state.isOpenWin10;
+    },
+  },
   methods: {
     toggleModalWin10() {
-      this.isOpenWin10 = !this.isOpenWin10;
+      this.$store.commit("toggleModalWin10");
     },
     getNow: function () {
       const today = new Date();

@@ -10,8 +10,14 @@
           params: { project: project, name: project.projectName },
         }"
         style="text-decoration: none; color: inherit"
-        >- {{ project.projectName }}</router-link
-      >
+        >{{ project.projectName }}
+        <img
+          class="pr-2"
+          width="100%"
+          :src="require(`@/assets/Projects/${project.images[0].src_alt}.png`)"
+          :alt="project.images[0].src_alt"
+        />
+      </router-link>
     </div>
   </v-col>
 </template>

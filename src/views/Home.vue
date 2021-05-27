@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-win10">
+  <div class="bg-win10" @click="modalFalse">
     <v-container fluid class="px-0 py-2 height">
       <v-row no-gutters class="height">
         <v-col cols="1">
@@ -27,6 +27,12 @@ export default {
   name: "Home",
   components: {
     DesktopMenu,
+  },
+  methods: {
+    modalFalse() {
+      this.$store.commit("modalFalse");
+      console.log(this.$store.state.isOpenWin10);
+    },
   },
 };
 </script>

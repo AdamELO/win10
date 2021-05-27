@@ -5,6 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
+    isOpenWin10: false,
     projects: [
       {
         framework: ["Vue", "JavaScript"],
@@ -198,7 +199,14 @@ export default new Vuex.Store({
       },
     ],
   },
-  mutations: {},
+  mutations: {
+    modalFalse(state) {
+      state.isOpenWin10 = false;
+    },
+    toggleModalWin10(state) {
+      state.isOpenWin10 = !state.isOpenWin10;
+    },
+  },
   actions: {},
   modules: {},
 });

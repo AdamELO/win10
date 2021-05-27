@@ -18,7 +18,7 @@
             <p class="ma-3">
               <v-row>
                 <v-col cols="12"
-                  >What I <v-icon color="white"> mdi-heart </v-icon></v-col
+                  >I <v-icon color="white"> mdi-heart </v-icon></v-col
                 >
                 <v-col
                   cols="4"

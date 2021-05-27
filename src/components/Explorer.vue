@@ -13,8 +13,8 @@
     </v-system-bar>
     <div class="d-flex justify-space-between pt-1">
       <div class="d-flex flex-row justify-center align-center">
-        <v-icon class="ma-4" small>mdi-arrow-left</v-icon>
-        <v-icon class="ma-4" small>mdi-arrow-right</v-icon>
+        <v-icon @click="backwards()" class="ma-4" small>mdi-arrow-left</v-icon>
+        <v-icon @click="forwards()" class="ma-4" small>mdi-arrow-right</v-icon>
       </div>
       <v-toolbar class="mx-3 explorerBorder" dense flat>
         <div class="d-flex">
@@ -112,6 +112,12 @@ export default {
       } else {
         this.scroll = false;
       }
+    },
+    backwards() {
+      window.history.back();
+    },
+    forwards() {
+      window.history.forward();
     },
   },
   computed: {
