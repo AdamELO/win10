@@ -3,7 +3,7 @@
     <v-main>
       <router-view />
     </v-main>
-    <WindowsBar />
+    <WindowsBar v-if="$route.path.includes('/home')" />
   </v-app>
 </template>
 

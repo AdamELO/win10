@@ -201,7 +201,7 @@ export default new Vuex.Store({
   },
   mutations: {
     modalFalse(state) {
-      state.isOpenWin10 = false;
+      state.isOpenWin10 === true ? (state.isOpenWin10 = false) : null;
     },
     toggleModalWin10(state) {
       state.isOpenWin10 = !state.isOpenWin10;

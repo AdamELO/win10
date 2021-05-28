@@ -3,7 +3,10 @@
     <v-icon color="white" class="py-2" dense> mdi-menu </v-icon>
     <v-spacer></v-spacer>
     <div class="pb-3">
-      <router-link style="text-decoration: none; color: inherit" to="/about">
+      <router-link
+        style="text-decoration: none; color: inherit"
+        to="/home/about"
+      >
         <img
           width="20px"
           height="20px"

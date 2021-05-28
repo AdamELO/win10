@@ -33,7 +33,7 @@
             <router-link
               class="d-flex align-center flex-column"
               style="text-decoration: none; color: inherit"
-              to="/contact"
+              to="/home/contact"
             >
               <v-img src="@/assets/form_64px.png" alt="mail-form-icon"></v-img>
               <span class="skills">Form</span>

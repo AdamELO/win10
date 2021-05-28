@@ -7,7 +7,7 @@
       <v-spacer></v-spacer>
       <v-icon class="ma-3" color="white">mdi-minus</v-icon>
       <v-icon class="ma-3" color="white">mdi-checkbox-blank-outline</v-icon>
-      <router-link style="text-decoration: none; color: inherit" to="/">
+      <router-link style="text-decoration: none; color: inherit" to="/home">
         <v-icon class="closeBtn" color="white">mdi-close</v-icon>
       </router-link>
     </v-system-bar>
@@ -45,7 +45,7 @@
       <v-col cols="2">
         <router-link
           style="text-decoration: none; color: inherit"
-          to="/projects"
+          to="/home/projects"
         >
           <div class="d-flex align-center my-2 hoverExplorerMenu">
             <v-icon small class="mx-1">mdi-chevron-right</v-icon>
@@ -53,14 +53,20 @@
             <span class="ml-2">Projects</span>
           </div>
         </router-link>
-        <router-link style="text-decoration: none; color: inherit" to="/skills">
+        <router-link
+          style="text-decoration: none; color: inherit"
+          to="/home/skills"
+        >
           <div class="d-flex align-center my-2 hoverExplorerMenu">
             <v-icon small class="mx-1">mdi-chevron-right</v-icon>
             <BaseIcon name="skills" width="15px" height="15px" />
             <span class="ml-2">Skills</span>
           </div>
         </router-link>
-        <router-link style="text-decoration: none; color: inherit" to="/about">
+        <router-link
+          style="text-decoration: none; color: inherit"
+          to="/home/about"
+        >
           <div class="d-flex align-center my-2 hoverExplorerMenu">
             <v-icon small class="mx-1">mdi-chevron-right</v-icon>
             <BaseIcon name="adam_avatar" width="15px" height="15px" />
@@ -69,7 +75,7 @@
         </router-link>
         <router-link
           style="text-decoration: none; color: inherit"
-          to="/contact"
+          to="/home/contact"
         >
           <div class="d-flex align-center my-2 hoverExplorerMenu">
             <v-icon small class="mx-1">mdi-chevron-right</v-icon>

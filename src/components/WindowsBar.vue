@@ -20,7 +20,7 @@
       <BaseIcon name="mail_icon" />
     </a>
     <router-link
-      to="/projects"
+      to="/home/projects"
       style="text-decoration: none; color: inherit; display: flex"
     >
       <BaseIcon name="explorer-6" />
@@ -70,7 +70,7 @@
     <router-link
       class="verticalBar"
       style="text-decoration: none; color: inherit"
-      to="/"
+      to="/home"
     >
     </router-link>
   </div>

@@ -6,42 +6,54 @@ import ProjectsShow from "../views/ProjectsShow.vue";
 import Skills from "../views/Skills.vue";
 import About from "../views/About.vue";
 import Contact from "../views/Contact.vue";
+import MainMobile from "../views/MainMobile.vue";
+import Init from "../Init.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
+    name: "Root",
+    component: Init,
+  },
+  {
+    path: "/MainMobile",
+    name: "MainMobile",
+    component: MainMobile,
+  },
+  {
+    path: "/home",
     name: "Home",
     component: Home,
     props: true,
     children: [
       {
-        path: "/skills",
+        path: "/home/skills",
         name: "Skills",
         props: true,
         component: Skills,
       },
       {
-        path: "/about",
+        path: "/home/about",
         name: "About",
         props: true,
         component: About,
       },
       {
-        path: "/contact",
+        path: "/home/contact",
         name: "Contact",
         props: true,
         component: Contact,
       },
       {
-        path: ":projects",
+        path: "/home/projects",
         name: "Projects",
         props: true,
         component: Projects,
       },
       {
-        path: "/projects/:name",
+        path: "/home/projects/:name",
         name: "Projects-Show",
         props: true,
         component: ProjectsShow,

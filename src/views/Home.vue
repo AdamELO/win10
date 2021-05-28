@@ -31,7 +31,6 @@ export default {
   methods: {
     modalFalse() {
       this.$store.commit("modalFalse");
-      console.log(this.$store.state.isOpenWin10);
     },
   },
 };
