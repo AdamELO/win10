@@ -8,6 +8,8 @@ import About from "../views/About.vue";
 import Contact from "../views/Contact.vue";
 import MainMobile from "../views/MainMobile.vue";
 import AboutMobile from "../views/AboutMobile.vue";
+import SkillsMobile from "../views/SkillsMobile.vue";
+import ProjectsMobile from "../views/ProjectsMobile.vue";
 import Init from "../Init.vue";
 
 Vue.use(VueRouter);
@@ -27,6 +29,16 @@ const routes = [
     path: "/mobile/about",
     name: "AboutMobile",
     component: AboutMobile,
+  },
+  {
+    path: "/mobile/skills",
+    name: "SkillsMobile",
+    component: SkillsMobile,
+  },
+  {
+    path: "/mobile/projects",
+    name: "ProjectsMobile",
+    component: ProjectsMobile,
   },
   {
     path: "/home",

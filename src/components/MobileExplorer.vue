@@ -1,7 +1,7 @@
 <template>
   <div>
     <MobileBarTop />
-    <div class="d-flex">
+    <div class="d-flex borderBottom">
       <v-icon @click="goBack()" x-large color="black">mdi-arrow-left</v-icon>
       <span class="mobileRouteExplorer"> {{ currentRouteName }}</span>
     </div>
@@ -47,5 +47,8 @@ export default {
 .mobileRouteExplorer {
   font-size: 30px;
   margin-left: 15px;
+}
+.borderBottom {
+  border-bottom: gainsboro 1px solid;
 }
 </style>
