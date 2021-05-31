@@ -5,6 +5,10 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
+    pageTransition: {
+      name: "router-view",
+      mode: "in-out",
+    },
     isOpenWin10: false,
     projects: [
       {
@@ -205,6 +209,20 @@ export default new Vuex.Store({
     },
     toggleModalWin10(state) {
       state.isOpenWin10 = !state.isOpenWin10;
+    },
+    setPageTransition(state, value) {
+      if ("default" === value) {
+        Vue.set(state, "pageTransition", {
+          name: "router-view",
+          mode: "in-out",
+        });
+      }
+      if ("back" === value) {
+        Vue.set(state, "pageTransition", {
+          name: "router-view-back",
+          mode: "",
+        });
+      }
     },
   },
   actions: {},

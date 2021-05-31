@@ -22,14 +22,26 @@
       </v-row>
     </v-container>
     <v-container fluid class="mobileMenu">
-      <v-row class="black--text font-weight-bold">
-        <v-col cols="3" class="d-flex flex-column justify-center align-center">
-          <v-img src="@/assets/about.png"></v-img>
-          <span>About</span>
+      <v-row class="white--text">
+        <v-col cols="3">
+          <router-link
+            style="text-decoration: none; color: inherit"
+            to="/mobile/about"
+            class="d-flex flex-column justify-center align-center"
+          >
+            <v-img src="@/assets/about.png"></v-img>
+            <span>About</span>
+          </router-link>
         </v-col>
-        <v-col cols="3" class="d-flex flex-column justify-center align-center">
-          <v-img src="@/assets/skillsMobile.png"></v-img>
-          <span>Skills</span>
+        <v-col cols="3">
+          <router-link
+            style="text-decoration: none; color: inherit"
+            to="/mobile/about"
+            class="d-flex flex-column justify-center align-center"
+          >
+            <v-img src="@/assets/skillsMobile.png"></v-img>
+            <span>Skills</span>
+          </router-link>
         </v-col>
         <v-col cols="3" class="d-flex flex-column justify-center align-center">
           <v-img src="@/assets/gallery.png"></v-img>

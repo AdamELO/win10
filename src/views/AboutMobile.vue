@@ -1,0 +1,13 @@
+<template>
+  <MobileExplorer>
+    <div class="about"></div>
+  </MobileExplorer>
+</template>
+<script>
+import MobileExplorer from "@/components/MobileExplorer.vue";
+export default {
+  components: {
+    MobileExplorer,
+  },
+};
+</script>

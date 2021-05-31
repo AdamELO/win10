@@ -129,7 +129,9 @@ export default {
   computed: {
     routeProjectName() {
       let path = this.$route.path;
-      let projectName = path.replace("/projects/", "").replaceAll("%20", " ");
+      let projectName = path
+        .replace("/home/projects/", "")
+        .replaceAll("%20", " ");
       return projectName;
     },
     currentRouteName() {

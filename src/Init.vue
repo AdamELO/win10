@@ -15,7 +15,7 @@ export default {
   },
   created() {
     if (this.isMobile()) {
-      this.$router.push("/MainMobile");
+      this.$router.push("/mobile");
     } else {
       this.$router.push("/home");
     }
