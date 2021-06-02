@@ -53,11 +53,8 @@
             <div class="text--primary font-weight-bold">
               Hello &#128587; !!! My name is Adam and I'm a FullStack Web
               Developer <br />
-              This is my portfolio where you can find my projects. <br />
-              I finished my web dev training in July and I'm currently looking
-              for a job/internship <br />
-              So if you're looking for a sympathic,curious and determined
-              fellow,<br />
+              I'm currently looking for a job/internship <br />
+              So if you're looking for a nice, curious and determined fellow,<br />
               Don't hesitate to contact me !!! <br />
               Why do I think I am the one you need ? Well, I don't fear bugs or
               problems, <br />

@@ -19,7 +19,7 @@
         <v-col cols="3" class="d-flex justify-center align-center">
           {{ project.projectName }}
         </v-col>
-        <v-col cols="5 d-flex justify-center align-center">
+        <v-col cols="5" class="d-flex justify-center align-center">
           <span
             class="mx-1"
             v-for="skills in project.framework"

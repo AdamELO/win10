@@ -84,8 +84,8 @@ export default {
   },
   data() {
     return {
-      currentTime: "",
-      currentDate: "",
+      currentTime: "Time",
+      currentDate: "Date",
     };
   },
   created() {

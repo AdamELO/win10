@@ -102,8 +102,8 @@
 export default {
   data() {
     return {
-      currentTime: "",
-      currentDate: "",
+      currentTime: "Time",
+      currentDate: "Date",
     };
   },
   created() {
@@ -127,15 +127,7 @@ export default {
         "November",
         "December",
       ];
-      const dayNames = [
-        "Sunday",
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saterdat",
-      ];
+      const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
       const day =
         today.getDate() >= 10 ? today.getDate() : "0" + today.getDate();

@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="height">
     <MobileBarTop />
     <div class="d-flex borderBottom">
       <v-icon @click="goBack()" x-large color="black">mdi-arrow-left</v-icon>
       <span class="mobileRouteExplorer"> {{ currentRouteName }}</span>
     </div>
-    <div>
+    <div class="overfloww height">
       <slot></slot>
     </div>
     <MobileBarBottom />
@@ -50,5 +50,9 @@ export default {
 }
 .borderBottom {
   border-bottom: gainsboro 1px solid;
+}
+.overfloww {
+  overflow-y: visible !important;
+  height: 100% !important;
 }
 </style>
