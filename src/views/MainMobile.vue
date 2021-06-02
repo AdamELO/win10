@@ -1,5 +1,5 @@
 <template>
-  <div class="wallpaper">
+  <div class="wallpaper height">
     <MobileBarTop />
     <HomeMobile />
     <MobileBarBottom />
@@ -21,7 +21,7 @@ export default {
 <style scoped>
 .wallpaper {
   background-image: url("../assets/wallpaper2.jpg");
-  /* Image By Mado El Khouly */
+  /* Wallpaper2 By Mado El Khouly */
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;

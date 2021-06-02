@@ -1,9 +1,5 @@
 <template>
   <div>
-    <!-- <div class="text-center white--text">
-      <h1>El Omari Adam</h1>
-      <h2>Web Developer Portfolio</h2>
-    </div> -->
     <v-container
       fluid
       class="d-flex justify-center align-center white--text my-5 py-5"

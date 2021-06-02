@@ -40,6 +40,12 @@ html,
 body {
   overflow-y: hidden !important;
 }
+@media (max-width: 992px) {
+  html,
+  body {
+    overflow-y: scroll !important;
+  }
+}
 /* // transitions// */
 /* slide up */
 .slide-up-enter {

@@ -6,7 +6,7 @@ export default {
   name: "Init",
   methods: {
     isMobile() {
-      if (screen.width <= 768) {
+      if (screen.width <= 991) {
         return true;
       } else {
         return false;
