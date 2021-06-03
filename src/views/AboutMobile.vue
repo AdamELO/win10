@@ -1,6 +1,6 @@
 <template>
   <MobileExplorer>
-    <v-card flat>
+    <v-card flat style="height: 80vh">
       <v-img src="@/assets/adam_avatar.png"></v-img>
       <v-card-title class="d-flex justify-center"
         >El Omari Adam || Web Developer</v-card-title

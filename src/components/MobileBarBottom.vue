@@ -1,5 +1,8 @@
 <template>
-  <v-bottom-navigation class="bottom d-flex justify-space-around align-center">
+  <v-bottom-navigation
+    :style="{ backgroundColor: BarColorBg }"
+    class="bottom d-flex justify-space-around align-center"
+  >
     <v-icon @click="goBack()" dense :color="iconColor"
       >mdi-triangle-outline mdi-rotate-270</v-icon
     >
@@ -12,11 +15,13 @@ export default {
   data() {
     return {
       iconColor: "black",
+      BarColorBg: "white",
     };
   },
   created() {
     if (this.$route.path == "/mobile") {
       this.iconColor = "white";
+      this.BarColorBg = "transparent";
     }
   },
   methods: {
@@ -46,6 +51,5 @@ export default {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: transparent !important;
 }
 </style>

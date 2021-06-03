@@ -10,6 +10,7 @@ import MainMobile from "../views/MainMobile.vue";
 import AboutMobile from "../views/AboutMobile.vue";
 import SkillsMobile from "../views/SkillsMobile.vue";
 import ProjectsMobile from "../views/ProjectsMobile.vue";
+import PageNotFound from "../views/PageNotFound.vue";
 import Init from "../Init.vue";
 
 Vue.use(VueRouter);
@@ -78,6 +79,13 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/page-not-found",
+    components: {
+      default: PageNotFound,
+    },
+  },
+  { path: "*", redirect: "/page-not-found" },
 ];
 
 const router = new VueRouter({

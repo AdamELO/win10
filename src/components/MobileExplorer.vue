@@ -53,6 +53,6 @@ export default {
 }
 .overflow {
   overflow-y: auto !important;
-  height: 100vh !important;
+  height: 100% !important;
 }
 </style>

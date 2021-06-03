@@ -1,5 +1,5 @@
 <template>
-  <div class="wallpaper height">
+  <div class="wallpaper">
     <MobileBarTop />
     <HomeMobile />
     <MobileBarBottom />

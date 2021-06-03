@@ -1,10 +1,7 @@
 <template>
   <MobileExplorer>
     <v-row v-for="project in projects" :key="project.id">
-      <v-col
-        cols="12"
-        class="d-flex align-center flex-column justify-space-between hoverExplorerMenu explorer my-1"
-      >
+      <v-col cols="12">
         <img
           width="100%"
           :src="require(`@/assets/Projects/${project.images[0].src_alt}.png`)"

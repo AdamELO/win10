@@ -1,5 +1,5 @@
 <template>
-  <v-system-bar class="" lights-out dark>
+  <v-system-bar lights-out dark>
     <v-icon>mdi-signal-cellular-outline</v-icon>
     <v-icon>mdi-wifi-strength-4</v-icon>
     <v-spacer></v-spacer>
@@ -37,10 +37,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.top {
-  position: fixed;
-  top: 0;
-}
-</style>
