@@ -61,7 +61,7 @@ export default new Vuex.Store({
         ],
       },
       {
-        framework: ["Php", "Laravel 7"],
+        framework: ["Laravel 7", "Php"],
         projectName: "The Labs Backoffice",
         id: 7,
         images: [
@@ -84,7 +84,7 @@ export default new Vuex.Store({
         ],
       },
       {
-        framework: ["Php", "Laravel 7"],
+        framework: ["Laravel 7", "Php"],
         projectName: "MolenGeek Room Booking System",
         id: 6,
         images: [
@@ -130,7 +130,7 @@ export default new Vuex.Store({
         ],
       },
       {
-        framework: ["Php", "Laravel 7"],
+        framework: ["Laravel 7", "Php"],
         projectName: "The Real Wedding Backoffice",
         id: 4,
         images: [
