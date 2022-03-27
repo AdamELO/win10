@@ -40,7 +40,15 @@
       <BaseIcon name="chrome" />
     </a>
     <v-spacer></v-spacer>
-    <BaseIcon name="help" />
+    <v-tooltip top>
+      <template v-slot:activator="{ on, attrs }">
+          <div class="d-flex" v-bind="attrs"
+              v-on="on">
+            <BaseIcon name="help" />
+          </div>
+      </template>
+      <span>For an optimal experience you should activate full screen (f11)</span>
+    </v-tooltip>
     <BaseIcon
       name="collapse_arrow"
       width="20"
@@ -163,6 +171,7 @@ export default {
   width: 40%;
   height: 80vh;
   background-color: rgb(8, 97, 165);
+  z-index: 9999;
 }
 .v-icon::before {
   background-color: transparent;
