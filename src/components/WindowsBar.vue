@@ -42,12 +42,13 @@
     <v-spacer></v-spacer>
     <v-tooltip top>
       <template v-slot:activator="{ on, attrs }">
-          <div class="d-flex" v-bind="attrs"
-              v-on="on">
-            <BaseIcon name="help" />
-          </div>
+        <div class="d-flex" v-bind="attrs" v-on="on">
+          <BaseIcon name="help" />
+        </div>
       </template>
-      <span>For an optimal experience you should activate full screen (f11)</span>
+      <span
+        >For an optimal experience you should activate full screen (f11)</span
+      >
     </v-tooltip>
     <BaseIcon
       name="collapse_arrow"
@@ -137,7 +138,7 @@ export default {
 
 <style scoped>
 .winBar {
-  background-color: rgb(0, 66, 117);
+  background-color: rgb(0, 63, 149);
   display: flex;
   height: 50px;
 }
@@ -170,7 +171,7 @@ export default {
   bottom: 50px;
   width: 40%;
   height: 80vh;
-  background-color: rgb(8, 97, 165);
+  background-color: rgb(6, 74, 170);
   z-index: 9999;
 }
 .v-icon::before {

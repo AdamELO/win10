@@ -1,6 +1,6 @@
 <template>
   <Explorer>
-    <v-container>
+    <v-container class="d-flex justify-center align-center">
       <v-row dense>
         <v-col cols="3">
           <v-card color="#1f88ff" dark>

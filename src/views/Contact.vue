@@ -41,7 +41,15 @@
           </v-row>
         </v-container>
         <div class="text-center">
-          <v-btn color="primary"> Send </v-btn>
+          <v-tooltip top>
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn color="primary" v-bind="attrs" v-on="on"> Send </v-btn>
+            </template>
+            <span
+              >Soon Available! You can contact me at
+              elomari-adam@hotmail.com</span
+            >
+          </v-tooltip>
         </div>
       </v-form>
     </v-card>

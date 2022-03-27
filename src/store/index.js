@@ -10,6 +10,7 @@ export default new Vuex.Store({
       mode: "in-out",
     },
     isOpenWin10: false,
+    shut: false,
     projects: [
       {
         framework: ["Vue", "JavaScript"],
@@ -209,6 +210,9 @@ export default new Vuex.Store({
     },
     toggleModalWin10(state) {
       state.isOpenWin10 = !state.isOpenWin10;
+    },
+    shutdown(state) {
+      state.shut = true;
     },
     setPageTransition(state, value) {
       if ("default" === value) {
