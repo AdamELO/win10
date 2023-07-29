@@ -19,6 +19,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Portfolio win10
-https://adam-elomari.herokuapp.com/
